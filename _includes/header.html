@@ -1,0 +1,37 @@
+<!-- header start -->
+
+
+{% comment %}
+  {% if site.float_logo %}
+    <a href="{{ site.url }}{{ site.baseurl }}" class="logo-readium"><span class="logo" style="background-image: url({{ site.logo }})"></span></a>
+  {% endif %}
+{% endcomment %}
+
+<!-- Load  an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="{{ "/css/header.css"  | prepend: site.baseurl  }}" />
+
+<div class="topcontainer">
+<div class="topnav" id="myTopnav">
+  <a href="/">Home</a>
+  <a href="contact">Contact</a>
+  <a href="domaines">Nos Domaines</a>
+  <a href="order">Comment Commander</a>
+  <a href="selection.html">Notre Sélection</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+<!-- header end -->
